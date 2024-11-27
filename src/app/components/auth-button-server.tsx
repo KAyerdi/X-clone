@@ -15,5 +15,4 @@ export async function AuthButtonServer () {
   <AuthButton session={session} />
   </section>
 )
-
 }
