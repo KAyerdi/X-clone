@@ -4,6 +4,7 @@ import { type Session, createClientComponentClient } from "@supabase/auth-helper
 import { useRouter } from 'next/navigation';
 
 
+
 export function AuthButton ({ session }: {session: Session | null }) {
   const supabase = createClientComponentClient()
   const router = useRouter()
@@ -46,7 +47,7 @@ export function AuthButton ({ session }: {session: Session | null }) {
         </svg>
         Iniciar Sesion con Github
       </button>
-        ) : (<button onClick={handleSignOut}>Cerrar Sesion</button>)
+        ) : ( <button onClick={handleSignOut}>Cerrar Sesion</button> )
       }
     </header>
   );
